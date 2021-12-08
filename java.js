@@ -30,11 +30,13 @@ else{
     errorauteur.style.color="green"
 
 }
-var type=document.getElementById("type")
-if(type.value.length>10){
+var prix=document.getElementById("Prix")
+if(isNaN(prix.value)){
 
     var errorprix=document.getElementById("prix-1")
     errorprix.innerHTML=('message no validé')
+    errorprix.style.color="red"
+
 
 }
 else{
