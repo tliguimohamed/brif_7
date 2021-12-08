@@ -34,7 +34,7 @@ var prix=document.getElementById("Prix")
 if(isNaN(prix.value)){
 
     var errorprix=document.getElementById("prix-1")
-    errorprix.innerHTML=('message no validé')
+    errorprix.innerHTML=('Message no validé')
     errorprix.style.color="red"
 
 
@@ -45,4 +45,26 @@ else{
     errorprix.style.color="green"
 
 }
+if((prix.value).trim() == ""){
+
+    var errorprix=document.getElementById("prix-1")
+    errorprix.innerHTML=('Message no validé')
+    errorprix.style.color="red"
+
+
+}
+var date=document.getElementById("date")
+if(date.value== "" ) { 
+    var errordate=document.getElementById("date-1")
+    errordate.innerHTML=('Message no validé')
+    errordate.style.color="red"
+ }
+    else{
+        var errordate=document.getElementById("date-1")
+        errordate.innerHTML=('good')
+        errordate.style.color="green"
+    
+}
+
+
 });
