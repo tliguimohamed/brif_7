@@ -166,6 +166,7 @@ function Edit(r) {
     var rad = document.getElementsByClassName ("radio-1")
     var i = r.parentNode.parentNode.rowIndex;
     var row = table.rows[i];
+    var lang= document.getElementById("fname");
     if (r.innerHTML == "Edit") {
         titre.value = row.cells[0].innerHTML;
         Auteur.value = row.cells[1].innerHTML;
@@ -188,6 +189,7 @@ function Edit(r) {
         row.cells[2].innerHTML = Prix.value;
         row.cells[3].innerHTML = date.value;
         row.cells[4].innerHTML = lang.options[lang.selectedIndex].value;
+        console.log(lang.options[lang.selectedIndex].value);
         for (var i = 0; i < rad.length; i++) {
             if (rad[i].checked) {
                 row.cells[5] = rad[i].value;
